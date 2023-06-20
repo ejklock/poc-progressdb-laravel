@@ -100,6 +100,23 @@ return [
             'password' => env('PROGRESS_DB_PASSWORD', ''),
             'codepage' => env('PROGRESS_DB_CODEPAGE', 'ISO_8859_1'),
             'schema' =>  env('PROGRESS_DB_SCHEMA', 'PUB'),
+            'options'   => [
+                PDO::ATTR_CASE => PDO::CASE_LOWER,
+            ],
+        ],
+        'progress-ems2cad' => [
+            'driver' => 'progress',
+            'host' => env('PROGRESS_EMS2CAD_DB_HOST', 'localhost'),
+            'port' => env('PROGRESS_EMS2CAD_DB_PORT', 19204),
+            'database' => env('PROGRESS_EMS2CAD_DB_DATABASE', 'forge'),
+            'username' => env('PROGRESS_EMS2CAD_DB_USERNAME', 'forge'),
+            'password' => env('PROGRESS_EMS2CAD_DB_PASSWORD', ''),
+            'codepage' => env('PROGRESS_EMS2CAD_DB_CODEPAGE', 'ISO_8859_1'),
+            'schema' =>  env('PROGRESS_EMS2CAD_DB_SCHEMA', 'PUB'),
+            'options'   => [
+                PDO::ATTR_CASE => PDO::CASE_LOWER,
+            ],
+
         ],
 
     ],
