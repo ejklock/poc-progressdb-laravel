@@ -4,7 +4,7 @@ services:
     container_name: schullz-app-dev
     environment:
     - COMPOSER_MEMORY_LIMIT=-1
-    image: ejklock/php-fpm-pgdb:7.4
+    image: ejklock/php-fpm-pgdb:8.1
     networks:
     - schullzNetwork
     restart: unless-stopped
